@@ -20,12 +20,20 @@ This method will either register the user and return a user object or it will re
 Let’s implement this method now.
 */
 export default {
-  setup() {
-    return {
+  
+    data(){
+      return {
       email :  '',
       password  : ''
+    };
+    },
+
+    methods:  {
+      register(){
+        
+      }
     }
-  },
+
 }
 </script>
 
