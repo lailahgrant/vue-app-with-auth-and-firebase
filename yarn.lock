@@ -1728,7 +1728,7 @@
     "webpack" "^4.0.0"
     "yorkie" "^2.0.0"
 
-"@vue/cli-plugin-router@^4.5.15":
+"@vue/cli-plugin-router@^4.5.15", "@vue/cli-plugin-router@~4.5.0":
   "integrity" "sha1-HnXIyJ30LGlPFDufECjePPXWHh4="
   "resolved" "https://registry.npmmirror.com/@vue/cli-plugin-router/download/@vue/cli-plugin-router-4.5.15.tgz?cache=0&sync_timestamp=1635486254933&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40vue%2Fcli-plugin-router%2Fdownload%2F%40vue%2Fcli-plugin-router-4.5.15.tgz"
   "version" "4.5.15"
@@ -1878,6 +1878,11 @@
     "vue-template-es2015-compiler" "^1.9.0"
   optionalDependencies:
     "prettier" "^1.18.2 || ^2.0.0"
+
+"@vue/devtools-api@^6.0.0-beta.18":
+  "integrity" "sha512-21u2jFOk8jbAneeGpDwZQ0W66RJa0IBDUyVl6SgKnn2cRFjLWzKj+ukXjpLhYr1KASyCe5E5U4jXwChVo0YUAw=="
+  "resolved" "https://registry.npmjs.org/@vue/devtools-api/-/devtools-api-6.0.0-beta.20.tgz"
+  "version" "6.0.0-beta.20"
 
 "@vue/preload-webpack-plugin@^1.1.0":
   "integrity" "sha1-zrkktOyzucQ4ccekKaAvhCPmIas="
@@ -9018,6 +9023,13 @@
     "loader-utils" "^1.1.0"
     "vue-hot-reload-api" "^2.3.0"
     "vue-style-loader" "^4.1.0"
+
+"vue-router@^4.0.12":
+  "integrity" "sha512-CPXvfqe+mZLB1kBWssssTiWg4EQERyqJZes7USiqfW9B5N2x+nHlnsM1D3b5CaJ6qgCvMmYJnz+G0iWjNCvXrg=="
+  "resolved" "https://registry.npmjs.org/vue-router/-/vue-router-4.0.12.tgz"
+  "version" "4.0.12"
+  dependencies:
+    "@vue/devtools-api" "^6.0.0-beta.18"
 
 "vue-style-loader@^4.1.0", "vue-style-loader@^4.1.2":
   "integrity" "sha1-bVWGOlH6dXqyTonZNxRlByqnvDU="
