@@ -29,8 +29,11 @@ import { getAuth, signInWithEmailAndPassword} from  'firebase/auth'
                     alert("Successfully logged in")
                     this.$router.push('/dashboard')
                 })
-                .catch( error => {
-                    alert(error.message)
+                .catch( ()  => {
+                // .catch( error => {
+                //     alert(error.message)
+                alert('Email or password not found,,Please Register!!')
+                this.$router.push('/register')
                 })
             }
         }
