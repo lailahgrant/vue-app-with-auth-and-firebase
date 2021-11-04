@@ -11,3 +11,35 @@
     </div>
 
 </template>
+
+
+<script>
+import { getAuth, signInWithEmailAndPassword} from  'firebase/auth'
+/**
+ * Firebase provides sample code to log in a user with an email address and password. 
+ * The Firebase auth method we will use is signInWithEmailAndPassword.
+ */
+
+    export default {
+        methods: {
+            login(){
+                const auth  = getAuth();
+                signInWithEmailAndPassword(auth,  this.email,  this.password)
+                .then( () =>  {
+                    alert("Successfully logged in")
+                    this.$router.push('/dashboard')
+                })
+                .catch( error => {
+                    alert(error.message)
+                })
+            }
+        }
+    }
+
+</script>
+
+
+
+
+
+

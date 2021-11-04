@@ -13,6 +13,7 @@
 
 
 <script>
+import { getAuth, createUserWithEmailAndPassword } from "@firebase/auth";
 /*
 Firebase Auth has a method called createuserWithEmailAndPassword. 
 You need to pass in the user’s email and password. 
@@ -29,8 +30,22 @@ export default {
     },
 
     methods:  {
+      /*
+        If the user was successfully registered you should get an alert and be redirected to the login page.
+        If the registration fails you should get an alert with an error message
+      */
       register(){
-        
+        const auth = getAuth();
+        createUserWithEmailAndPassword(auth, this.email, this.password)
+        .then( ( ) => {
+          alert('Successfully registered !  please Login')
+          this.$router.push('/')
+          // go  to authentication to view the registered  email
+        })
+        .catch( error  => {
+          alert(error.message)
+        })
+
       }
     }
 
